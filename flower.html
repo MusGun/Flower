@@ -8,12 +8,17 @@
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>flowers</title>
 </head>
+<script>
+  window.onload = function() {
+    var context = new AudioContext();
+  }
+  </script>
+  </head>
 <body class="container">
   <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-  <audio id="player" autoplay loop>
+  <audio id="player" autoplay>
     <source src="when I was your man (sped up) (320kbps).mp3" type="audio/mp3">
 </audio>
-
   <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
     <div class="night"></div>
     <div class="flowers">
