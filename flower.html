@@ -8,17 +8,29 @@
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>flowers</title>
 </head>
-<script>
-  window.onload = function() {
-    var context = new AudioContext();
-  }
-  </script>
   </head>
 <body class="container">
-  <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-<audio id="player" autoplay>
-    <source src="when I was your man (sped up) (320kbps).mp3" type="audio/mp3">
-</audio>
+  <iframe src="" allow="autoplay" id="audioID" style="display: none"></iframe>
+  <audio id="audioID" autoplay>
+      <source src="when I was your man (sped up) (320kbps).mp3" type="audio/mp3">
+  </audio>
+  <script>
+    window.onload = function() {
+      var context = new AudioContext();
+    }
+    var myaudio = document.getElementById("audioID").autoplay = true;
+
+    var vAudio = document.getElementById("audioID");
+ var hasInit = false;
+ function playMusic()
+ {
+    if(!hasInit)
+    {
+        hasInit = true;
+        vAudio.play();
+    }
+ }
+    </script>
   <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
     <div class="night"></div>
     <div class="flowers">
