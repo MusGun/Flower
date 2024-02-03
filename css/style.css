@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
 *{
     font-family: 'Poppins',cursive;
+    margin: 0;
+    padding: 0;
 }
 body{
     color: azure;
@@ -53,12 +55,31 @@ body img{
     margin-bottom: 20px;
 }
 
-.button a{
-    text-decoration: none;
-    font-size: 1rem;
-    color: #111;
-    
+.button {
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    color: black;
+    list-style: none;
 }
+a:link { 
+    text-decoration: none;
+    color: black;
+  } 
+  a:visited { 
+    text-decoration: none; 
+    color: black;
+  } 
+  a:hover { 
+    text-decoration: none; 
+    color: black;
+  } 
+  a:active { 
+    text-decoration: none; 
+    color: black;
+  }
 
 @media screen and (max-width:574px){
     body img{
